@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- areaBackground 设置区域背景
+         rockerBackground 设置摇杆的样式
+         rockerScale 设置摇杆的相对于背景的比例
+         rockerSpeedLevel 设置当前位置相对于中心点的距离的比例  如：10  则中心点到边缘的距离分为10分 越靠外数值越大0-10
+         rockerCallBackMode 有变化就回调，或者是方向改变才会回调-->
+    <declare-styleable name="RockerView">
+        <attr name="areaBackground" format="color|reference" />
+        <attr name="rockerBackground" format="color|reference" />
+        <attr name="rockerScale" format="float"/>
+        <attr name="rockerSpeedLevel" format="integer" />
+        <attr name="rockerCallBackMode">
+            <flag name="CALL_BACK_MODE_MOVE" value="0" />
+            <flag name="CALL_BACK_MODE_STATE_CHANGE" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>
